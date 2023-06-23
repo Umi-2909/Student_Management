@@ -1,0 +1,53 @@
+.container {
+  margin: 20px;
+}
+
+.form-header {
+  width: 80%;
+}
+
+.error-message {
+  color: red;
+}
+a{
+  text-decoration: none;
+}
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.flash-message {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.form-check{
+  margin-left: 16px;
+}
+
+.blurred-placeholder::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3); /* Màu chữ làm mờ */
+}
+
+.blurred-placeholder:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.blurred-placeholder::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.blurred-placeholder:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}

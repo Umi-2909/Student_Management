@@ -1,0 +1,85 @@
+{
+  "classes": [
+    {
+      "className": "TI31-h3",
+      "academicYear": "K31",
+      "facultyAdvisor": "Nguyễn Trung Long",
+      "major": "Computer Science",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "className": "QA32-a1",
+      "academicYear": "K32",
+      "facultyAdvisor": "Nguyễn Anh Phong",
+      "major": "Marketing"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "classId": 1,
+      "code": "A34281",
+      "name": "Nguyễn Xuân Hải",
+      "gender": "Male",
+      "dob": "2000-09-29",
+      "className": "TI31-h3",
+      "academicYear": "K31",
+      "email": "hainguyenxuan2909@gmail.com",
+      "phone": "0973148200",
+      "picture": ""
+    },
+    {
+      "id": 2,
+      "classId": 2,
+      "code": "A34282",
+      "name": "Nguyễn Linh Anh",
+      "gender": "Female",
+      "dob": "2001-05-15",
+      "className": "QA32-a1",
+      "academicYear": "K32",
+      "email": "lannguyenthithi@gmail.com",
+      "phone": "0987654321",
+      "picture": ""
+    },
+    {
+      "id": 3,
+      "classId": 2,
+      "code": "B12345",
+      "name": "Trần Văn Nam",
+      "gender": "Male",
+      "dob": "2001-03-01",
+      "className": "QA32-a1",
+      "academicYear": "K32",
+      "email": "namtranvan@gmail.com",
+      "phone": "0912345678",
+      "picture": ""
+    },
+    {
+      "code": "1",
+      "name": "1",
+      "clasId": "",
+      "gender": "Other",
+      "dob": "2023-06-01",
+      "className": "1",
+      "academicYear": "1",
+      "email": "1",
+      "phone": "1",
+      "picture": "",
+      "id": 4
+    },
+    {
+      "code": "1",
+      "name": "1",
+      "clasId": "",
+      "gender": "Male",
+      "dob": "2023-06-01",
+      "className": "1",
+      "academicYear": "",
+      "email": "1",
+      "phone": "1",
+      "picture": "1",
+      "id": 5
+    }
+  ]
+}

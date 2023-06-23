@@ -1,0 +1,54 @@
+<div>
+    <button mat-raised-button color="primary" style="background-color: #4758B8; color: white;" (click)="addClass()">
+      <mat-icon>add_box</mat-icon>
+      New Class
+    </button>
+    <table id="mytable" style="border-collapse: collapse;">
+      <tr>
+        <!-- <th>Avatar</th> -->
+        <th>ID</th>
+        <th>
+          Class Name
+        </th>
+        <th>Academic Year</th>
+        <th>Faculty Advisor</th>
+        <th>Major</th>
+        <!-- <th>Gender</th>
+        <th>Date Of Birth</th>
+        <th>Email</th>
+        <th>Phone Contact</th> -->
+        <th></th>
+      </tr>
+      <tr *ngFor="let class of classes">
+        <!-- <td style="align-items: center">
+            <img
+              *ngIf="student?.picture"
+              src="{{ student?.picture }}"
+              height="50"
+            />
+          </td> -->
+        <td>{{ class?.id }}</td>
+        <td>{{ class?.className }}</td>
+        <td>{{ class?.academicYear }}</td>
+        <td>{{ class?.facultyAdvisor }}</td>
+        <td>{{ class?.major }}</td>
+        <td>
+            <mat-icon
+              style="cursor: pointer;"
+              title="Delete"
+              (click)="deleteClass(class.id)"
+            >
+              clear
+            </mat-icon>
+            &nbsp;
+            <mat-icon
+              style="cursor: pointer;"
+              title="Edit"
+              (click)="editClass(class.id)"
+            >
+              create
+            </mat-icon>
+          </td>
+      </tr>
+    </table>
+  </div>
