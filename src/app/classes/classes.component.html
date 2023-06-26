@@ -13,23 +13,13 @@
         <th>Academic Year</th>
         <th>Faculty Advisor</th>
         <th>Major</th>
-        <!-- <th>Gender</th>
-        <th>Date Of Birth</th>
-        <th>Email</th>
-        <th>Phone Contact</th> -->
         <th></th>
       </tr>
       <tr *ngFor="let class of classes">
-        <!-- <td style="align-items: center">
-            <img
-              *ngIf="student?.picture"
-              src="{{ student?.picture }}"
-              height="50"
-            />
-          </td> -->
         <td>{{ class?.id }}</td>
-        <td>{{ class?.className }}</td>
-        <td>{{ class?.academicYear }}</td>
+        <td>
+          <a (click)="navigateToStudentList(class?.className)">{{ class?.className }}</a>
+        </td>        <td>{{ class?.academicYear }}</td>
         <td>{{ class?.facultyAdvisor }}</td>
         <td>{{ class?.major }}</td>
         <td>

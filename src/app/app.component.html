@@ -50,6 +50,13 @@
       >
         <mat-icon>person</mat-icon> About
       </a>
+      <a
+        mat-button
+        [routerLink]="['/donate']"
+        [routerLinkActive]="'active-link'"
+      >
+        <mat-icon>money</mat-icon> Donate++
+      </a>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>
@@ -90,3 +97,5 @@
     </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+

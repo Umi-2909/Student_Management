@@ -44,4 +44,8 @@ export class ClassesComponent implements OnInit {
   public editClass(classId) {
     this.router.navigate(['class-form', classId]);
   }
+
+  navigateToStudentList(className: string) {
+    this.router.navigate(['/student-list', className]);
+  }
 }

@@ -11,6 +11,7 @@ import { Student } from '../models/Student';
 import { Class } from '../models/Class';
 
 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -97,12 +98,6 @@ export class ServerHttpService {
       .pipe(catchError(this.handleError));
   }
 
-  public getComments() {
-    const url = `${this.REST_API_SERVER}/comments`;
-    return this.httpClient
-      .get<any>(url, this.httpOptions)
-      .pipe(catchError(this.handleError));
-  }
 
   public getPosts() {
     const url = `${this.REST_API_SERVER}/posts`;
@@ -116,6 +111,14 @@ export class ServerHttpService {
     return this.httpClient
       .post<any>(url, data, this.httpOptions)
       .pipe(catchError(this.handleError));
+  }
+
+  public getStudentsByClassName(className: string): Observable<Student[]> {
+    const url = `${this.REST_API_SERVER}/students`;
+    return this.httpClient.get<Student[]>(url, this.httpOptions).pipe(
+      map(students => students.filter(student => student.className === className)),
+      catchError(this.handleError)
+    );
   }
 
   private handleError(error: HttpErrorResponse) {

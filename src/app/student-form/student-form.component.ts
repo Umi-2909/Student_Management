@@ -15,7 +15,6 @@ export class StudentFormComponent implements OnInit {
   public studentForm = new FormGroup({
     code: new FormControl(''),
     name: new FormControl(''),
-    clasId: new FormControl(''),
     gender: new FormControl(''),
     dob: new FormControl(''),
     className: new FormControl(''),
@@ -28,7 +27,6 @@ export class StudentFormComponent implements OnInit {
     id: '',
     code: '',
     name: '',
-    classId: '',
     gender: '',
     dob: undefined,
     className: '',

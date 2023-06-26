@@ -70,7 +70,7 @@ export class ClassFormComponent implements OnInit {
         this.router.navigate(['classes']);
         setTimeout(() => {
           this.showSuccessMessage = false;
-        }, 2000); // 2 giây
+        }, 2000);
       });
     } else {
       this.serverHttp.addClass(this.createNewData()).subscribe((data) => {
@@ -79,7 +79,7 @@ export class ClassFormComponent implements OnInit {
         this.router.navigate(['classes']);
         setTimeout(() => {
           this.showSuccessMessage = false;
-        }, 2000); // 2 giây
+        }, 2000);
       });
     }
   }

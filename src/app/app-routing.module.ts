@@ -1,3 +1,4 @@
+import { StudentListComponent } from './student-list/student-list.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'students', component: StudentsComponent },
   { path: 'classes', component: ClassesComponent },
   { path: 'student-form/:id', component: StudentFormComponent },
+  { path: 'student-list/:className', component: StudentListComponent },
   { path: 'class-form/:id', component: ClassFormComponent },
   { path: 'about', component: AboutComponent },
   { path: '**', component: PageNotFoundComponent }

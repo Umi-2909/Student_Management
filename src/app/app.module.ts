@@ -24,6 +24,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ClassFormComponent } from './class-form/class-form.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { ClassFormComponent } from './class-form/class-form.component';
     DashboardComponent,
     StudentFormComponent,
     ClassesComponent,
-    ClassFormComponent
+    ClassFormComponent,
+    StudentListComponent,
   ],
   imports: [
     BrowserModule,

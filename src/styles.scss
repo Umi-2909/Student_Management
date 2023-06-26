@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap');
 @import 'normalize.css';
 
-a{
-    text-decoration: none;
-}
+
 li{
     list-style-type: none;
 }
@@ -17,4 +15,6 @@ li{
     scroll-behavior: smooth;
 }
 
-
+img{
+    border-radius: 20%;
+}

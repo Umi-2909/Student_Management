@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonService } from '../Services/common.service';
 import { ServerHttpService } from '../Services/server-http.service';
 import { Student } from '../models/Student';
-import { Router } from '@angular/router';
 import * as _ from 'lodash';
 
 @Component({
@@ -14,6 +14,7 @@ export class StudentsComponent implements OnInit {
   public students: Student[] = [];
 
   constructor(
+    private route: ActivatedRoute,
     private common: CommonService,
     private serverHttp: ServerHttpService,
     private router: Router
@@ -21,6 +22,7 @@ export class StudentsComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadData();
+    const className = this.route.snapshot.paramMap.get('className');
   }
 
   private loadData() {
@@ -29,6 +31,13 @@ export class StudentsComponent implements OnInit {
       this.students = data;
       this.common.setTotalStudents(data.length);
     });
+  }
+
+  loadStudentsByClassName(className: string) {
+    this.serverHttp.getStudentsByClassName(className)
+      .subscribe((students: Student[]) => {
+        this.students = students;
+      });
   }
 
   public addStudent() {
@@ -44,5 +53,9 @@ export class StudentsComponent implements OnInit {
 
   public editStudent(studentId) {
     this.router.navigate(['student-form', studentId]);
+  }
+
+  navigateToStudentList(className: string) {
+    this.router.navigate(['/student-list', className]);
   }
 }

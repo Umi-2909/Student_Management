@@ -13,12 +13,46 @@
       "academicYear": "K32",
       "facultyAdvisor": "Nguyễn Anh Phong",
       "major": "Marketing"
+    },
+    {
+      "className": "TE31-h1",
+      "academicYear": "K31",
+      "facultyAdvisor": "Nguyễn Trâm Anh",
+      "major": "Software Technology",
+      "id": 3
+    },
+    {
+      "className": "TC31-h1",
+      "academicYear": "K31",
+      "facultyAdvisor": "Trịnh Quốc Long",
+      "major": "System Management",
+      "id": 4
+    },
+    {
+      "className": "HM29-b2",
+      "academicYear": "K29",
+      "facultyAdvisor": "Nguyễn Trung Kiên",
+      "major": "Logistics",
+      "id": 5
+    },
+    {
+      "className": "EA30-g2",
+      "academicYear": "K30",
+      "facultyAdvisor": "Nguyễn Trung Hưng",
+      "major": "Electronics and Telecommunications Engineering",
+      "id": 6
+    },
+    {
+      "className": "Test",
+      "academicYear": "K99",
+      "facultyAdvisor": "Cristiano Ronaldo",
+      "major": "Football Manager",
+      "id": 7
     }
   ],
   "students": [
     {
       "id": 1,
-      "classId": 1,
       "code": "A34281",
       "name": "Nguyễn Xuân Hải",
       "gender": "Male",
@@ -27,59 +61,91 @@
       "academicYear": "K31",
       "email": "hainguyenxuan2909@gmail.com",
       "phone": "0973148200",
-      "picture": ""
+      "picture": "https://randomuser.me/api/portraits/men/60.jpg"
     },
     {
       "id": 2,
-      "classId": 2,
-      "code": "A34282",
+      "code": "A39291",
       "name": "Nguyễn Linh Anh",
       "gender": "Female",
       "dob": "2001-05-15",
       "className": "QA32-a1",
       "academicYear": "K32",
       "email": "lannguyenthithi@gmail.com",
-      "phone": "0987654321",
-      "picture": ""
+      "phone": "0987611321",
+      "picture": "https://randomuser.me/api/portraits/women/8.jpg"
     },
     {
-      "id": 3,
-      "classId": 2,
-      "code": "B12345",
+      "code": "A37812",
       "name": "Trần Văn Nam",
       "gender": "Male",
       "dob": "2001-03-01",
       "className": "QA32-a1",
       "academicYear": "K32",
       "email": "namtranvan@gmail.com",
-      "phone": "0912345678",
-      "picture": ""
+      "phone": "0912345112",
+      "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+      "id": 3
     },
     {
-      "code": "1",
-      "name": "1",
-      "clasId": "",
-      "gender": "Other",
-      "dob": "2023-06-01",
-      "className": "1",
-      "academicYear": "1",
-      "email": "1",
-      "phone": "1",
-      "picture": "",
+      "code": "A34315",
+      "name": "Lê Anh Quân",
+      "gender": "Male",
+      "dob": "2000-06-02",
+      "className": "TC31-h1",
+      "academicYear": "K31",
+      "email": "lequan29@gmail.com",
+      "phone": "0913288911",
+      "picture": "https://randomuser.me/api/portraits/men/62.jpg",
       "id": 4
     },
     {
-      "code": "1",
-      "name": "1",
-      "clasId": "",
-      "gender": "Male",
-      "dob": "2023-06-01",
-      "className": "1",
-      "academicYear": "",
-      "email": "1",
-      "phone": "1",
-      "picture": "1",
+      "code": "A23441",
+      "name": "Nguyễn Thị Kim Chi",
+      "gender": "Female",
+      "dob": "1998-02-03",
+      "className": "HM29-b2",
+      "academicYear": "K29",
+      "email": "kimchicucai@gmail.com",
+      "phone": "0911277634",
+      "picture": "https://randomuser.me/api/portraits/women/50.jpg",
       "id": 5
+    },
+    {
+      "code": "A26772",
+      "name": "Phạm Thị Hà",
+      "gender": "Female",
+      "dob": "1999-12-22",
+      "className": "EA30-g2",
+      "academicYear": "K30",
+      "email": "habestzuka@yahoo.com",
+      "phone": "0988817961",
+      "picture": "https://randomuser.me/api/portraits/women/66.jpg",
+      "id": 6
+    },
+    {
+      "code": "A28774",
+      "name": "Đào Văn Nam",
+      "gender": "Male",
+      "dob": "2000-02-04",
+      "className": "TE31-h1",
+      "academicYear": "K31",
+      "email": "daovannam@thanglong.edu.vn",
+      "phone": "0944778498",
+      "picture": "https://randomuser.me/api/portraits/men/64.jpg",
+      "id": 7
+    },
+    {
+      "code": "A28813",
+      "name": "Nguyễn Thùy Dung",
+      "gender": "Female",
+      "dob": "2000-06-11",
+      "className": "EA30-g2",
+      "academicYear": "K30",
+      "email": "dungdeptrai@gmail.com.vn",
+      "phone": "0911228900",
+      "picture": "https://randomuser.me/api/portraits/women/97.jpg",
+      "id": 8
     }
   ]
 }
