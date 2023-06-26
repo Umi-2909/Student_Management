@@ -147,5 +147,11 @@
       "picture": "https://randomuser.me/api/portraits/women/97.jpg",
       "id": 8
     }
-  ]
+  ],
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "json-server": "json-server --watch db.json"
+  }
 }
