@@ -2,7 +2,6 @@
   <div class="page">
     <div class="page-header cf">
       <h2>{{className}}</h2>
-      <!-- dynamically insert search form here (optional) -->
     </div>
     <ul class="student-list">
       <li class="student-item cf" *ngFor="let student of students">
@@ -15,11 +14,9 @@
               <h3 style="margin-left: 8px;"> {{student.code}}  {{ student.name }} </h3>
           </div>
       </li>
-      <!-- Display "No student in Class" if students array is empty -->
       <ng-container *ngIf="students.length === 0">
         <h2 style="font-size: 24px; font-weight: bold; color: red;">There are no students in this class</h2>
       </ng-container>
     </ul>
-    <!-- dynamically add pagination links here -->
   </div>
 </body>

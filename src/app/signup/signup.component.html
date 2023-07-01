@@ -1,0 +1,19 @@
+<div id="login-box">
+    <div class="left">
+        <form [formGroup]="singupForm" (ngSubmit)= "signUp()">
+            <input formControlName="fullname" type="text" name="name" placeholder="Name" />
+            <span class="text-danger" *ngIf="singupForm.controls['fullname'].dirty && singupForm.hasError('required','fullname')">*Name is required</span>
+            <input formControlName="email" type="text" name="email" placeholder="E-mail" />
+            <span class="text-danger" *ngIf="singupForm.controls['email'].dirty && singupForm.hasError('required','email')">*Email is required</span>
+            <input formControlName="password" type="password" name="password" placeholder="Password" />
+            <span class="text-danger" *ngIf="singupForm.controls['password'].dirty && singupForm.hasError('required','password')">*Password is required</span>
+            <input formControlName="mobile" type="text" name="number" placeholder="Phone Number" />
+            <span class="text-danger" *ngIf="singupForm.controls['mobile'].dirty && singupForm.hasError('required','mobile')">*Mobile is required</span>
+            <!-- <input type="password" name="password2" placeholder="Retype password" /> -->
+
+            <input type="submit" [disabled]= "!singupForm.valid" name="signup_submit" value="Sign me up" />
+            <div class="or">OR</div>
+
+        </form>
+    </div>
+  </div>

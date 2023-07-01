@@ -146,12 +146,60 @@
       "phone": "0911228900",
       "picture": "https://randomuser.me/api/portraits/women/97.jpg",
       "id": 8
+    },
+    {
+      "code": "A34526",
+      "name": "Hà Minh Long",
+      "gender": "Male",
+      "dob": "2000-04-01",
+      "className": "TI31-h3",
+      "academicYear": "K31",
+      "email": "longhaminh2000@yahoo.com",
+      "phone": "0433752029",
+      "picture": "https://randomuser.me/api/portraits/men/97.jpg",
+      "id": 9
+    },
+    {
+      "code": "A34453",
+      "name": "Nguyễn Thị Thu Hà",
+      "gender": "Female",
+      "dob": "2000-08-08",
+      "className": "TI31-h3",
+      "academicYear": "K31",
+      "email": "thuhanguyen@gmail.com",
+      "phone": "0834126677",
+      "picture": "https://randomuser.me/api/portraits/women/67.jpg",
+      "id": 10
     }
   ],
-  "scripts": {
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "json-server": "json-server --watch db.json"
-  }
+  "signupUsers": [
+    {
+      "fullname": "1",
+      "email": "1",
+      "password": "1",
+      "mobile": "1",
+      "id": 1
+    },
+    {
+      "fullname": "2",
+      "email": "2",
+      "password": "2",
+      "mobile": "2",
+      "id": 2
+    },
+    {
+      "fullname": "3",
+      "email": "3",
+      "password": "3",
+      "mobile": "3",
+      "id": 3
+    },
+    {
+      "fullname": "3",
+      "email": "3",
+      "password": "3",
+      "mobile": "3",
+      "id": 4
+    }
+  ]
 }

@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatInputModule } from '@angular/material/input';
 
+import { NgxPaginationModule } from 'ngx-pagination';
+
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -25,6 +27,8 @@ import { StudentFormComponent } from './student-form/student-form.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ClassFormComponent } from './class-form/class-form.component';
 import { StudentListComponent } from './student-list/student-list.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -38,6 +42,8 @@ import { StudentListComponent } from './student-list/student-list.component';
     ClassesComponent,
     ClassFormComponent,
     StudentListComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,7 @@ import { StudentListComponent } from './student-list/student-list.component';
     HttpClientModule,
     MatSliderModule,
     MatToolbarModule,
+    NgxPaginationModule,
     MatIconModule,
     MatBadgeModule,
     MatInputModule,

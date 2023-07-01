@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@500;600;800&display=swap" rel="stylesheet"></head>
+    <script src="https://unpkg.com/feather-icons"></script>
+<body>
+    <div class="contain">
+
+        <div class="login">
+            <form [formGroup]="loginFrom" (ngSubmit)= "login()">
+                <h1>Welcome Back!</h1>
+                <small>Log in to your account and start this amazing technology.</small>
+                <label for="email">Email</label>
+                <input formControlName="email" placeholder="Enter Email" type="text" name="" id="">
+                <span class="text-danger" *ngIf="loginFrom.controls['email'].dirty && loginFrom.hasError('required','email')">*Email is required</span>
+                <label for="passw">Password</label>
+                <input formControlName="password" placeholder="Enter Password" type="password" name="" id="">
+                <span class="text-danger" *ngIf="loginFrom.controls['password'].dirty && loginFrom.hasError('required','password')">*Password is required</span>
+                <div class="mor">
+                    <input class="check" type="checkbox"><label for="check">Remember Me</label>
+                    <a href="/login">Forgot Password?</a>
+                </div>
+                <input class="log" type="submit" [disabled]= "!loginFrom.valid" name="" value="Login" id="">
+
+                <div class="container">
+                    <div class="line"></div>
+                    <p>Or</p>
+                    <div class="line"></div>
+                </div>
+
+                <div class="op">
+                    <button [routerLink]="['/signup']">
+                        <img src="https://companieslogo.com/img/orig/GOOG-0ed88f7c.png?t=1633218227" alt="Google Logo" class="Google-logo">
+                        Login with Google
+                    </button>
+                    <button [routerLink]="['/signup']">
+                        <img src="https://seeklogo.com/images/A/apple-logo-5933E519F8-seeklogo.com.png" alt="Apple Logo" class="Apple-logo">
+                        Login with Apple
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="image">
+            <h1 style="text-shadow: 1px solid black;">Sign up and unlock great features!</h1>
+            <button class="sign"[routerLink]="['/signup']">Sign Up</button>
+        </div>
+
+    </div>
+
+    <script>
+      feather.replace()
+    </script>
+</body>
+</html>

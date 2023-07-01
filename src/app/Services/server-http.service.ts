@@ -6,10 +6,9 @@ import {
 } from '@angular/common/http';
 import { throwError } from 'rxjs/internal/observable/throwError';
 import { Observable } from 'rxjs';
-import { catchError, map, tap } from 'rxjs/operators';
+import { catchError, map } from 'rxjs/operators';
 import { Student } from '../models/Student';
 import { Class } from '../models/Class';
-
 
 
 @Injectable({
@@ -98,20 +97,6 @@ export class ServerHttpService {
       .pipe(catchError(this.handleError));
   }
 
-
-  public getPosts() {
-    const url = `${this.REST_API_SERVER}/posts`;
-    return this.httpClient
-      .get<any>(url, this.httpOptions)
-      .pipe(catchError(this.handleError));
-  }
-
-  public addPosts(data) {
-    const url = `${this.REST_API_SERVER}/posts`;
-    return this.httpClient
-      .post<any>(url, data, this.httpOptions)
-      .pipe(catchError(this.handleError));
-  }
 
   public getStudentsByClassName(className: string): Observable<Student[]> {
     const url = `${this.REST_API_SERVER}/students`;

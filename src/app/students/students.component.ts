@@ -12,6 +12,8 @@ import * as _ from 'lodash';
 })
 export class StudentsComponent implements OnInit {
   public students: Student[] = [];
+  public pageNumber = 1;
+  public totalStudents = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -31,6 +33,10 @@ export class StudentsComponent implements OnInit {
       this.students = data;
       this.common.setTotalStudents(data.length);
     });
+  }
+
+  onPageChange(pageNumber: number) {
+    this.pageNumber = pageNumber;
   }
 
   loadStudentsByClassName(className: string) {

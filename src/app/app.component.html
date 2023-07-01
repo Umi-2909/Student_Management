@@ -57,6 +57,20 @@
       >
         <mat-icon>money</mat-icon> Donate++
       </a>
+      <a
+        mat-button
+        [routerLink]="['/login']"
+        [routerLinkActive]="'active-link'"
+      >
+        <mat-icon>login</mat-icon> Login
+      </a>
+      <a
+        mat-button
+        [routerLink]="['/signup']"
+        [routerLinkActive]="'active-link'"
+      >
+        <mat-icon>singup</mat-icon> Register
+      </a>
     </div>
   </mat-toolbar-row>
 </mat-toolbar>

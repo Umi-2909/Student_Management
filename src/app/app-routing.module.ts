@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentFormComponent } from './student-form/student-form.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ClassFormComponent } from './class-form/class-form.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -18,6 +20,8 @@ const routes: Routes = [
   { path: 'student-list/:className', component: StudentListComponent },
   { path: 'class-form/:id', component: ClassFormComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
