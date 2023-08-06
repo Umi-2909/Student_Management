@@ -2,26 +2,24 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
-## Development server
+# Phần mềm quản lý sinh viên
+## Tổng quan về Project
+Phần mềm quản lý học sinh – học viên là công cụ được xây dựng để hỗ trợ cho công tác quản lý học sinh, sinh viên. Hỗ trợ công tác quản lý ở các cơ sở giáo dục như nhà trường, trung tâm. Nhằm mang đến hiệu quả quản lý tốt nhất về: quản lý thông tin học sinh, học viên, quản lý ngành học, quản lý lớp, phân loại sinh viê theo lớp...
+## Công nghệ chính
+- Angular
+- HTML/CSS
+- Json Server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Chức năng chính trong web
+### Đăng nhập, đăng ký
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/a8f8c7be-b252-40cf-858b-3e3a23f18916)
+### Trang chủ
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/498b50a9-3a8e-487f-b3d8-468bbfcecc60)
+### Danh sách sinh viên
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/fd150bab-d063-4dd9-bba3-b21559f1dc36)
+### Danh sách lớp
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/3831de11-2284-46b3-b173-968fe8fd806c)
+### Phân loại sinh viên theo lớp
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/89fdaacd-4e51-45e4-aa45-32972b5cf804)
+### Đường dẫn sai
+![image](https://github.com/Umi-2909/Student_Management/assets/132434205/c58a76ea-3993-48a9-bf83-521a65be9f10)
